@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 720px;
+    margin: 10vh auto;
+    
+    display: grid;
+    grid-template-columns: 340px 300px;
+    column-gap: 80px;
+
+    background-color: whitesmoke;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.2em;
+    padding: 0.3em;
+    border: 1px solid rgb(68, 68, 68);
+    border-radius: 6px;
+    box-shadow: 0px 2px 2px 0px #555555;
+    background-color: rgb(235, 235, 235);
+}
+
+#display {
+    grid-column: 1 / 5;
+    padding: 0.2em;
+    background-color: rgb(97, 219, 117);
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    font-weight: bold;
+    color: #444444;
+    text-align: right;
+}
+
+#message {
+    grid-column: 2 / 5;
+    font-size: 0.7em;
+    text-align: center;
+    line-height: 1em;
+}
+
+/*** BUTTONS ***/
+button {
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 0px 1px 0px #ffffff;
+	padding: 0.5em;
+}
+button:active {
+	position: relative;
+	top: 1px;
+}
+
+.number {
+	box-shadow: inset 0px 1px 0px 0px #ffffff;
+	background: linear-gradient(to bottom, #eeeaea 5%, #d8d6d6 100%);
+	background-color: #eeeaea;
+	border: 1px solid #bbbbbb;
+	color: #555555;
+}
+.number:hover {
+	background: linear-gradient(to bottom, #d8d6d6 5%, #eeeaea 100%);
+	background-color: #d8d6d6;
+}
+
+.operation {
+	box-shadow: inset 0px 1px 0px 0px #b8b8b8;
+	background: linear-gradient(to bottom, #aaaaaa 5%, #cccccc 100%);
+	background-color: #aaaaaa;
+	border: 1px solid #888888;
+	color: #222222;
+}
+.operation:hover {
+	background: linear-gradient(to bottom, #cccccc 5%, #aaaaaa 100%);
+	background-color: #cccccc;
+}
+
+.delete {
+	box-shadow: inset 0px 1px 0px 0px #f5978e;
+	background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	background-color: #f24537;
+	border: 1px solid #d02718;
+    color: #ffffff;
+    text-shadow:0px 1px 0px #810e05;
+}
+.delete:hover {
+	background: linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+    background-color: #c62d1f;
+}

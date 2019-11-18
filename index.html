@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <meta name="description" content="A simple calculator for performing basic arithmetical operations.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="bignumber.min.js"></script>
+</head>
+
+<body>
+
+    <div class="calculator">
+        <div id="display"></div>
+        <button class="delete"    onclick="erase()"      >C</button>
+        <p id="message"></p>
+        <button class="number"    onclick="addDigit('7')">7</button>
+        <button class="number"    onclick="addDigit('8')">8</button>
+        <button class="number"    onclick="addDigit('9')">9</button>
+        <button class="operation" onclick="operate('+')" >&plus;</button>
+        <button class="number"    onclick="addDigit('4')">4</button>
+        <button class="number"    onclick="addDigit('5')">5</button>
+        <button class="number"    onclick="addDigit('6')">6</button>
+        <button class="operation" onclick="operate('-')" >&minus;</button>
+        <button class="number"    onclick="addDigit('1')">1</button>
+        <button class="number"    onclick="addDigit('2')">2</button>
+        <button class="number"    onclick="addDigit('3')">3</button>
+        <button class="operation" onclick="operate('*')" >&times;</button>
+        <button class="number"    onclick="addDigit('0')">0</button>
+        <button class="number"    onclick="addDigit('.')">.</button>
+        <button class="operation" onclick="equals()"     >&equals;</button>
+        <button class="operation" onclick="operate('/')" >&divide;</button>
+    </div>
+
+    <div>
+        <p>This simple calculator is the second program I have made.</p>
+        <p>It performs the basic arithmetical operations with the help of 
+            <a href="https://www.npmjs.com/package/bignumber.js" target="_blank">bignumber.js</a> 
+            library to deal with overflows and floating point imprecision.</p>
+        <p>Operations are performed in successive order, disregarding arithmetical precedence rules.</p>
+        <p>I used CSS Grid for the layout.</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
