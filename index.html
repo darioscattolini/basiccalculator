@@ -7,11 +7,16 @@
     <meta name="description" content="A simple calculator for performing basic arithmetical operations.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="bignumber.min.js"></script>
+    <script src="https://kit.fontawesome.com/d6262197ed.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+    <header>
+        <h2>Beware:</h2>
+        <p>Operations are performed in successive order, disregarding arithmetical precedence rules.</p>
+    </header>
+    
     <div class="calculator">
         <div id="display"></div>
         <button class="delete"    onclick="erase()"      >C</button>
@@ -34,16 +39,28 @@
         <button class="operation" onclick="operate('/')" >&divide;</button>
     </div>
 
-    <div>
-        <p>This simple calculator is the second program I have made.</p>
-        <p>It performs the basic arithmetical operations with the help of 
-            <a href="https://www.npmjs.com/package/bignumber.js" target="_blank">bignumber.js</a> 
-            library to deal with overflows and floating point imprecision.</p>
-        <p>Operations are performed in successive order, disregarding arithmetical precedence rules.</p>
-        <p>I used CSS Grid for the layout.</p>
-    </div>
+    <footer>
+        <p>
+            Developed by Darío Scattolini
+            <a href="https://darioscattolini.github.io" title="Darío Scattolini's HomePage">
+                <i class="fas fa-home"></i></a> <a href="https://github.com/darioscattolini" title="Darío Scattolini's GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </p>
+        <p>
+            Sourcecode available in <a href="https://github.com/darioscattolini/basiccalculator"
+            title="Access the GitHub repository with the sourcecode of this project">GitHub</a>
+        </p>
+        <p>
+            &copy; 2019 Darío Scattolini - 
+            <a href="https://choosealicense.com/licenses/mit/" target="_blank" 
+            title="Find out more about MIT Licences">MIT License</a>
+        </p>
+    </footer>
 
+    <script src="bignumber.min.js"></script>
     <script src="main.js"></script>
+
 </body>
 
 </html>
