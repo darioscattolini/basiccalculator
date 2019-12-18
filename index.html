@@ -19,7 +19,7 @@
     
     <div class="calculator">
         <div id="display"></div>
-        <button class="delete"    onclick="erase()"      >C</button>
+        <button class="delete"    onclick="initialize()" >C</button>
         <p id="message"></p>
         <button class="number"    onclick="addDigit('7')">7</button>
         <button class="number"    onclick="addDigit('8')">8</button>
@@ -35,7 +35,7 @@
         <button class="operation" onclick="operate('*')" >&times;</button>
         <button class="number"    onclick="addDigit('0')">0</button>
         <button class="number"    onclick="addDigit('.')">.</button>
-        <button class="operation" onclick="equals()"     >&equals;</button>
+        <button class="operation" onclick="calcResult()" >&equals;</button>
         <button class="operation" onclick="operate('/')" >&divide;</button>
     </div>
 
